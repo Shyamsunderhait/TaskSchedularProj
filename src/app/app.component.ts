@@ -16,7 +16,7 @@ export class AppComponent {
   appointments: Appointment[];
   currentDate: Date = new Date(2024, 4, 7);
 
-  constructor(service: AppService) {
+  constructor(public service: AppService) {
     this.appointments = service.getAppointments();
   }
 }
